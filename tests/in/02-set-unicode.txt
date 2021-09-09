@@ -1,0 +1,2 @@
+set foo "이것은 웃기는 얼굴입니다: 😀"
+strlen foo

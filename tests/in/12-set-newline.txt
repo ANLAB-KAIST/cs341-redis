@@ -1,0 +1,2 @@
+set foo "This is a\nsingle argument"
+strlen foo

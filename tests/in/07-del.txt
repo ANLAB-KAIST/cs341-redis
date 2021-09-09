@@ -1,0 +1,2 @@
+DEL key1
+DEL key2

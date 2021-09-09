@@ -1,0 +1,3 @@
+This is a
+single argument
+25

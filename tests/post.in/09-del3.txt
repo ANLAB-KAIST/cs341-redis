@@ -1,0 +1,3 @@
+GET key1
+GET key2
+GET key3
