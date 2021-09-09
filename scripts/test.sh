@@ -126,7 +126,6 @@ runtest_large() {
 }
 
 
-
 for in in tests/in/*.txt; do
     runtest "$(basename ${in})"
 done
@@ -135,4 +134,3 @@ runtest_large 1K
 runtest_large 4K
 runtest_large 2M
 runtest_large 128M
-runtest_large 512M
