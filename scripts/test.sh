@@ -122,6 +122,12 @@ runtest_large() {
     
     stop_timeout
 
+
+    ## Cleanup
+    docker rm -f $CLIENT_NAME >/dev/null 2>&1
+    docker rm -f $SERVER_NAME >/dev/null 2>&1
+    docker network rm $NETWORK_NAME >/dev/null 2>&1
+
     rm -rf $TEST_DIR $OUT_DIR $IN_DIR
 }
 
