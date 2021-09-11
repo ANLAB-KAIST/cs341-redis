@@ -29,7 +29,7 @@ runtest() {
     ## Run Prepare
     if test -f "${PWD}/tests/pre.in/$basename"; then
         echo "Preparing..."
-        docker run --rm --name $CLIENT_NAME --network $NETWORK_NAME -v${PWD}/tests/pre.in:/tests:ro -v${OUT_DIR}:/out $REDIS_IMAGE bash -c "cat /tests/$basename | redis-cli --raw -h $SERVER_NAME > /dev/null"
+        docker run --rm --name $CLIENT_NAME --network $NETWORK_NAME -v${PWD}/tests/pre.in:/tests:ro $REDIS_IMAGE bash -c "cat /tests/$basename | redis-cli --raw -h $SERVER_NAME > /dev/null"
     fi
 
     ## Test Server
